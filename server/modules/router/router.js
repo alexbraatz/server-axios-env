@@ -6,7 +6,7 @@ require( 'dotenv').config();
 
 router.get( '/', ( req, res )=>{
     console.log( '/giphy GET' );
-    axios.get(`https://api.giphy.com/v1/gifs/trending?api_key=${ process.env.GIPHY_API_KEY}&limit=10&rating=pg-13`).then( ( 
+    axios.get(`https://api.giphy.com/v1/gifs/trending?api_key=${ process.env.GIPHY_API_KEY}&limit=25&rating=pg-13`).then( ( 
         response)=>{
             res.send( response.data.data );
         }).catch( ( err )=>{

@@ -13,18 +13,6 @@ function App () {
       })
     }
 
-    const loadGifs = () => {
-      if ( gif ){
-        {gif.map( ( aGif, i )=>{
-          return (
-            <tr key={ i }>
-              <td><img src={ aGif.images.original.url } /></td>
-            </tr>
-          )
-        })}
-      }
-    }
-
     return (
       <div className="App">
         <header className="App-header">
